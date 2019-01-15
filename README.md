@@ -1,1 +1,1 @@
-# BamazonZ
+# Bamazon - MySQL and Sequelize
