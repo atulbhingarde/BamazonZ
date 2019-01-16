@@ -1,0 +1,46 @@
+drop database if exists xh5tztrm7z0igh9g;
+CREATE DATABASE xh5tztrm7z0igh9g;
+
+USE xh5tztrm7z0igh9g;
+CREATE TABLE Products (
+  id integer auto_increment primary key,
+  item_id integer,
+  product_name VARCHAR(40),
+  department_name VARCHAR(100),
+  price DECIMAL(10,2),
+  stock_quantity INT NULL,
+  createdAt datetime default now(),
+  updatedAt datetime default now()
+);
+SELECT * FROM Products;
+
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (101,"Refridgerator","APPLIANCES", 3999.99, 20);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (201,"Washer","APPLIANCES", 599.99, 10);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (301,"Microwave","APPLIANCES", 199.99, 15);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (401,"Hard Drive","COMPUTERS", 105.99, 100);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (501,"Keyboard","COMPUTERS", 25.99, 50);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (601,"Mouse","COMPUTERS", 19.99, 50);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (701,"iPod","MUSIC", 199.99, 20);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (801,"SanDisk","MUSIC",80.99 , 10 );
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (901,"Headphone","MUSIC", 6.99, 20);
+
+INSERT INTO Products (item_id,product_name,department_name,price,stock_quantity) 
+VALUES (902,"TV","CLEARANCE", 495.99, 20);
